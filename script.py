@@ -1,7 +1,5 @@
 import json
 from flask import Flask, request
-from serve import get_forecast_api
-
 #from serve import get_keywords_api
 # I've commented out the last import because it won't work in kernels,
 # but you should uncomment it when we build our app tomorrow
@@ -10,7 +8,7 @@ from serve import get_forecast_api
 app = Flask(__name__)
 
 # load our pre-trained model & function
-forecast_api = get_forecast_api()
+forecast_api = get_forecaster_api()
 
 # Define a post method for our API.
 @app.route('/forecast', methods=['POST'])
