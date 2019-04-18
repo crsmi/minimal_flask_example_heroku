@@ -11,8 +11,8 @@ def get_forecaster_api():
 
     # Function to apply our model & extract keywords from a
     # provided bit of text
-    def forecaster_api(forecaster,teams):
-        forecast = forecaster.forecast(teams[0],teams[1])
+    def forecaster_api(teams):
+        forecast = f.forecast(teams[0],teams[1])
         return forecast
 
     # return the function we just defined
