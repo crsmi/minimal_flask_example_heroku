@@ -1,4 +1,5 @@
 import pickle
+import pandas as pd
 
 # Function that takes loads in our pickled word processor
 # and defines a function for using it. This makes it easy
