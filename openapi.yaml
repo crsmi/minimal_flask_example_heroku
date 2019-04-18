@@ -1,17 +1,23 @@
 openapi: "3.0.0"
 
 info:
-  title: "Useless sample api"
-  description: "A simple api that returns a 200 if you ping it."
+  title: "AUDL Game Forecaster"
+  description: "API that accepts two AUDL team abbreviations and returns win probabilities."
   version: "1.0"
 
 paths:
-  /ping:
-    get:
+  /extractelopredictions:
+    post:
+      description: "Extract elo predictions"
+
+      requestBody:
+        description: "Json with fields for home team and away team"
+        required: true
+        content:
+          application/json: {}
+
       responses:
         '200':
-          description: OK
+          description: "Returns percentage chance of each team winning as well as predicted margin of victory"
           content:
-            text/plain:
-              schema:
-                type: string
+            application/json: {}
