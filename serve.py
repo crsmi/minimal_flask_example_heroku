@@ -16,4 +16,4 @@ def get_forecaster_api():
         return forecast
 
     # return the function we just defined
-    return forecast_api
+    return forecaster_api
