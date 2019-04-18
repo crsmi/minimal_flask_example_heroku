@@ -7,6 +7,13 @@ from serve import get_forecaster_api
 # create an instance of Flask
 app = Flask(__name__)
 
+# This will print some text at our app's URL
+# so that we can check that it's working. If you
+# wanted a more complex UI you could put it here.
+@app.route('/')
+def index():
+    return "Up and running!"
+
 # load our pre-trained model & function
 forecast_api = get_forecaster_api()
 

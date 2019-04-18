@@ -7,7 +7,8 @@ def get_forecaster_api():
 
     # read in pickled word processor. You could also load in
     # other models as this step.
-    f = pickle.load(open("audl_forecaster.pkl", "rb"))
+    with open("audl_forecaster.pkl", "rb") as file:
+        f = pickle.load(file)
 
     # Function to apply our model & extract keywords from a
     # provided bit of text
