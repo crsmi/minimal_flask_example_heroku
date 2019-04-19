@@ -14,6 +14,7 @@ class Forecaster():
 
 if __name__ == "__main__":
     import pandas as pd
+    from forecast import Forecaster
     games = pd.read_csv("https://raw.githubusercontent.com/crsmi/audl-elo/master/audl_elo.csv")
 
     def create_fran_lookup():
