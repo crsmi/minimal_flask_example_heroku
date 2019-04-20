@@ -6,7 +6,7 @@ info:
   version: "1.0"
 
 paths:
-  /extractelopredictions:
+  /forecast:
     post:
       description: "Extract elo predictions"
 

@@ -25,7 +25,7 @@ def forecast():
     their indices and then returns them as a json file.
     """
     # the data the user input, in json format
-    input_data = request.json
+    input_data = json.loads(request.json)
 
     # use our API function to get the keywords
     output_data = forecast_api(input_data)
